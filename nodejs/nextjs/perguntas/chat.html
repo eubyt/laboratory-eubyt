@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@1,600&display=swap);
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        background: #000000;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.5em;
+        color: #ffffff;
+      }
+
+      .colon {
+        display: none;
+      }
+
+      #log {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 10px 10px;
+        width: 100%;
+      }
+
+      #log > div {
+        margin: 1em;
+      }
+
+      #log > div.deleted {
+        visibility: hidden;
+      }
+
+      .chat-msg {
+        display: flex;
+      }
+
+      .red {
+        background-color: #f76a6a;
+        width: 1rem;
+        border-radius: 50%;
+      }
+
+      .msg-content {
+        background: #fff;
+        color: #1e1c27;
+      }
+
+      .badge {
+        display: inline-block;
+        margin-right: 0.2em;
+        position: relative;
+        height: 1em;
+        vertical-align: middle;
+        top: -0.1em;
+      }
+
+      .name {
+        margin-left: 0.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="log" class="sl__chat__layout">
+      <div class="chat-msg" data-from="exemplo" data-id="exemplo-123456">
+        <div class="red"></div>
+        <div class="msg-content">
+          <span class="meta">
+            <span class="badges"> </span>
+            <span class="name" id="{messageId}">Eubyt</span>
+          </span>
+          <span class="message">
+            Olá mundo Olá mundo Olá mundo Olá mundo Olá mundo Olá mundo Olá
+            mundo Olá mundo
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
